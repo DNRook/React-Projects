@@ -27,7 +27,7 @@ html{
 	background-color: white;
 	border-radius: 25px;
 	padding: 30px 2%;
-  width: 80%;
+  	width: 80%;
 	min-width: 900px;
 	display:grid;
 	grid-template-columns:repeat(4, minmax(250px, 300px)) ;
@@ -91,7 +91,7 @@ a{
   color: white;
 }
 
-@media screen and (max-width: 1000px){
+@media  (max-width: 1000px){
   html{
     height: 180vh;
   }
@@ -104,3 +104,27 @@ a{
     min-width: 800px;
   }
 }
+@media  (max-width: 600px){
+	html{
+	  height: 400vh;
+	}
+	.card-grid{
+		background-color: white;
+	border-radius: 25px;
+		padding: 0;
+  	width: 100px;
+	max-width: 200px;
+	display:grid;
+	grid-template-columns:repeat(1, 200px) ;
+	grid-gap: 30px;
+	position: relative;
+	left: -200px;
+	top: 50px;
+	align-content: center;
+	justify-content: center;
+	background-color: transparent;
+	}
+	.card-body{
+		height: 150px;
+	}
+  }
